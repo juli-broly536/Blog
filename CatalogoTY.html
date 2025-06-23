@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vehículos Toyota</title>
+    <link rel="icon" href="Toyota.jpg" type="">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f0;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #ff0000, #ff6347);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .catalog-section {
+            margin-bottom: 2.5rem;
+        }
+        .catalog-section h2 {
+            color: #ff0000;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ff6347;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+        .vehicle-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .vehicle-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            padding: 1rem;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .vehicle-card:hover {
+            transform: scale(1.04);
+        }
+        .vehicle-card img {
+            width: 180px;
+            height: 110px;
+            object-fit: contain;
+            background: #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 0.7rem;
+        }
+        .vehicle-card h3 {
+            margin: 0.5rem 0 0 0;
+            color: #ff0000;
+            font-size: 1.1rem;
+        }
+        a.button-link button, a button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a.button-link button:hover, a button:hover {
+            background-color: #ff0000;
+            transform: scale(1.1);
+        }
+        @media (max-width: 700px) {
+            .vehicle-list {
+                flex-direction: column;
+                gap: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Toyota.html" style="text-decoration: none; position: absolute; top: 50%; left: 1rem; transform: translateY(-50%);">
+            <button>&larr;</button>
+        </a>
+        <h1>Catálogo de Vehículos Toyota</h1>
+    </header>
+    <div class="container">
+
+        <div class="catalog-section">
+            <h2>Autos</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Yaris Hatchback.png" alt="Yaris Hatchback">
+                    <h3>Yaris Hatchback</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Yaris Sedan.png" alt="Yaris Sedan">
+                    <h3>Yaris Sedan</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Corolla.png" alt="Corolla">
+                    <h3>Corolla</h3>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="catalog-section">
+            <h2>Pick-Up</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Hilux DX y SR.png" alt="Hilux DX y SR">
+                    <h3>Hilux DX y SR</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Hilux SRV y SRX.png" alt="Hilux SRV y SRX">
+                    <h3>Hilux SRV y SRX</h3>
+                </div>
+            </div>
+        </div>
+  
+        <div class="catalog-section">
+            <h2>SUV</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Corolla CROSS.png" alt="Corolla Cross">
+                    <h3>Corolla Cross</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="SW4.png" alt="SW4">
+                    <h3>SW4</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="SW4 Diamond.png" alt="SW4 Diamond">
+                    <h3>SW4 Diamond</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Land Crusier 300.png" alt="Land Cruiser 300">
+                    <h3>Land Cruiser 300</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-section">
+            <h2>Comercial</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Hiace Furgon.png" alt="Hiace Furgón">
+                    <h3>Hiace Furgón</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Hiace Commuter.png" alt="Hiace Commuter">
+                    <h3>Hiace Commuter</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Hiace Wagon.png" alt="Hiace Wagon">
+                    <h3>Hiace Wagon</h3>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="catalog-section">
+            <h2>Deportivos</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Gr86.png" alt="GR86">
+                    <h3>GR86</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="GR Yaris.png" alt="GR Yaris">
+                    <h3>GR Yaris</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Corolla GR-Sport.png" alt="Corolla GR-Sport">
+                    <h3>Corolla GR-Sport</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Corolla Cross GR-Sport.png" alt="Corolla Cross GR-Sport">
+                    <h3>Corolla Cross GR-Sport</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Hilux GR-Sport.png" alt="Hilux GR-Sport">
+                    <h3>Hilux GR-Sport</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="SW4 GR-Sport.png" alt="SW4 GR-Sport">
+                    <h3>SW4 GR-Sport</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-section">
+            <h2>Híbridos</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Corolla Hybrid.jpeg" alt="Corolla Hybrid">
+                    <h3>Corolla Hybrid</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Corolla Cross Hybrid.png" alt="Corolla Cross Hybrid">
+                    <h3>Corolla Cross Hybrid</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="RAV4 Hybrid.png" alt="RAV4 Hybrid">
+                    <h3>RAV4 Hybrid</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Crown.png" alt="Crown">
+                    <h3>Crown</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

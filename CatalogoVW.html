@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Volkswagen</title>
+    <link rel="icon" href="Volkswagen.png" type="">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #004aad, #00aaff);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .catalog-section {
+            margin-bottom: 2.5rem;
+        }
+        .catalog-section h2 {
+            color: #004aad;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #00aaff;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+        .vehicle-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .vehicle-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            padding: 1rem;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .vehicle-card:hover {
+            transform: scale(1.04);
+        }
+        .vehicle-card img {
+            width: 180px;
+            height: 110px;
+            object-fit: contain;
+            background: #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 0.7rem;
+        }
+        .vehicle-card h3 {
+            margin: 0.5rem 0 0 0;
+            color: #004aad;
+            font-size: 1.1rem;
+        }
+        a.button-link button, a button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #00aaff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a.button-link button:hover, a button:hover {
+            background-color: #004aad;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Volkswagen.html" style="text-decoration: none; position: absolute; top: 50%; left: 1rem; transform: translateY(-50%);">
+            <button>&larr;</button>
+        </a>
+        <h1>Catálogo Volkswagen</h1>
+    </header>
+    <div class="container">
+        
+        <div class="catalog-section">
+            <h2>Autos</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Polo.webp" alt="Volkswagen Polo">
+                    <h3>Polo</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Virtus.webp" alt="Volkswagen Virtus">
+                    <h3>Virtus</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Vento.webp" alt="Volkswagen Vento">
+                    <h3>Vento</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="catalog-section">
+            <h2>SUV</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Nivus.webp" alt="Volkswagen Nivus">
+                    <h3>Nivus</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="T-Cross.webp" alt="Volkswagen T-Cross">
+                    <h3>T-Cross</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Taos.webp" alt="Volkswagen Taos">
+                    <h3>Taos</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Tiguan Allspace.webp" alt="Volkswagen Tiguan Allspace">
+                    <h3>Tiguan Allspace</h3>
+                </div>
+            </div>
+        </div>
+  
+        <div class="catalog-section">
+            <h2>Pick-Up</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-card">
+                    <img src="Saveiro.webp" alt="Volkswagen Saveiro">
+                    <h3>Saveiro</h3>
+                </div>
+                <div class="vehicle-card">
+                    <img src="Amarok.webp" alt="Volkswagen Amarok">
+                    <h3>Amarok</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

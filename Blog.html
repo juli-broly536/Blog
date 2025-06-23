@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Toyota y Volkswagen</title>
+    <link rel="icon" href="Blog.jpeg" type="">
+    <link rel="stylesheet" href="StyleBLOG.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(90deg, #ff0000, #3333ff);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav a {
+            color: #222;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.08rem;
+            letter-spacing: 1.5px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-transform: uppercase;
+            padding: 0.25em 1.1em;
+            border-radius: 5px;
+            background: none;
+            box-shadow: none;
+            transition: 
+                color 0.2s,
+                background 0.3s,
+                box-shadow 0.3s,
+                letter-spacing 0.3s;
+            margin: 0 0.2em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        nav a::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 20%;
+            bottom: 0;
+            width: 60%;
+            height: 2px;
+            background: #222;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            transform: scaleX(0);
+        }
+
+        nav a:hover::after, nav a:focus::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+
+        nav a[href="Blog.html"]:hover, nav a[href="Blog.html"]:focus {
+            color: #111;
+            background: #ededed;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transform: scale(1.10);
+            letter-spacing: 2.5px;
+            text-decoration: none;
+        }
+
+        nav a[href="Toyota.html"]:hover,
+        nav a[href="Toyota.html"]:focus,
+        nav a[href="Volkswagen.html"]:hover,
+        nav a[href="Volkswagen.html"]:focus,
+        nav a[href="#contacto"]:hover,
+        nav a[href="#contacto"]:focus {
+            color: #111;
+            background: #ededed;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            letter-spacing: 2.5px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .brand-section {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .brand-section img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .brand-section h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .brand-section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .brand-section a {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .brand-section a:hover {
+            background-color: #0056b3;
+        }
+        .brand-section.toyota {
+            border-left: 5px solid #ff0000;
+        }
+        .brand-section.volkswagen {
+            border-left: 5px solid #3333ff;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        .contact-section {
+            background: #007BFF;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .contact-section h2 {
+            margin-bottom: 1rem;
+        }
+        .contact-section button {
+            padding: 0.7rem 1.5rem;
+            background-color: #ffcc00;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .contact-section button:hover {
+            background-color: #e6b800;
+        }
+        .div-container img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 200px;           
+        }
+        .img {
+            object-fit: contain;      
+        }
+        @media (max-width: 768px) {
+            .autos {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<nav style="width: 100%; background: #fff; color: #111; display: flex; align-items: center; justify-content: space-between; padding: 0.7rem 2rem 0.7rem 1.5rem; box-sizing: border-box; border-bottom: 2px solid #eee; font-family: 'Segoe UI', Arial, sans-serif; font-weight: 600; letter-spacing: 0.5px;">
+    <div style="font-size: 1.1rem;">
+       <a href="../LinkTRI.html">Inicio</a>
+    </div>
+    <div style="flex: 1; display: flex; justify-content: center; gap: 2.5rem; font-size: 1.1rem;">
+        <a href="Toyota.html">Publicaciones de TY</a>
+        <a href="Volkswagen.html">Publicaciones de VW</a>
+    </div>
+    <div style="font-size: 1.1rem;">
+        <a href="Contacto.html">Contacto</a>
+    </div>
+</nav>
+    <header>
+        <h1>Blog sobre Toyota y Volkswagen</h1>
+    </header>
+    <div class="container">
+        <div class="brand-section toyota">
+            <div class="div-container img">
+                <img src="toyota.jpg" alt="Toyota" class="img">
+            </div>
+            <div>
+                <h2>Toyota</h2>
+                <p>Toyota es una de las marcas de automóviles más reconocidas a nivel mundial. Fundada en Japón, es conocida por su innovación, confiabilidad y compromiso con la sostenibilidad.</p>
+                <a href="Toyota.html" target="_blank">Mas Informacion Sobre Toyota</a>
+            </div>
+        </div>
+        <div class="brand-section volkswagen">
+            <div class="div-container img">
+                <img src="Volkswagen.png" alt="Volkswagen" class="img">
+            </div>
+            <div>
+                <h2>Volkswagen</h2>
+                <p>Volkswagen, una marca alemana icónica, es conocida por su diseño elegante, tecnología avanzada y una rica historia en la industria automotriz.</p>
+                <a href="Volkswagen.html" target="_blank">Mas Informacion Sobre Volkswagen</a>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center; margin-top: 2rem; color: #333;">Mis autos favoritos de Toyota y Volkswagen</h1>
+    <div class="autos" style="display: flex; justify-content: center; gap: 2rem; max-width: 900px; margin: 2.5rem auto;">
+        <div style="flex: 0 0 44%; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.10); padding: 1.5rem; text-align: center;">
+            <h3 style="color: #3333ff; margin-top: 0; font-size: 1.4rem;">Vento GLI</h3>
+            <img src="Vento Gli 2023-Photoroom.png" alt="Vento GLI 2023" style="width: 100%; max-width: 340px; height: 210px; object-fit: contain; border-radius: 10px; background: #f0f0f0; margin-bottom: 1.1rem;">
+            <p style="margin-top: 1rem; color: #333; font-size: 1rem;">
+                El Volkswagen Vento GLI es mi auto favorito de Volkswagen por su estética deportiva y elegante, su caja automática de doble embrague DSG que ofrece cambios rápidos y precisos, su potente motor 2.0 TSI, el excelente torque (Newton metro) que brinda gran respuesta en todo momento y sus caballos de fuerza que lo hacen muy divertido de manejar. Es un sedán que combina confort, tecnología y deportividad.
+            </p>
+        </div>
+        <div style="flex: 0 0 44%; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.10); padding: 1.5rem; text-align: center;">
+            <h3 style="color: #ff0000; margin-top: 0; font-size: 1.4rem;">Toyota GR86</h3>
+            <img src="GR86 AUTO FAVO.png" alt="Toyota GR86" style="width: 100%; max-width: 340px; height: 210px; object-fit: contain; border-radius: 10px; background: #f0f0f0; margin-bottom: 1.1rem;">
+            <p style="margin-top: 1rem; color: #333; font-size: 1rem;">
+                El Toyota GR86 es mi auto favorito de Toyota porque es un deportivo puro, con tracción trasera, motor bóxer atmosférico y caja manual. Su bajo peso, chasis equilibrado y respuesta directa hacen que la experiencia de manejo sea divertida y emocionante, ideal para los amantes de la conducción deportiva.
+            </p>
+        </div>
+    </div> 
+
+    <marquee>Suscribete para nuevas novedades</marquee>   
+
+</body>
+</html>
